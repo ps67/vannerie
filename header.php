@@ -1,7 +1,7 @@
 <!-- ============ HEADER SECTION ============== -->
 <tr id="header" >
 <td></td>
-<td colspan="" >
+<td style="padding-left:0" >
 <a href="index.php" ><img src="images/logo_vannerie.gif" title="Home"/></a></td>
 <td></td>
 </tr>
@@ -27,4 +27,3 @@
 <!--End Navigation-->
 
 <!--End Header-->
-<tr>

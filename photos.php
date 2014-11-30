@@ -4,8 +4,14 @@ include("headpage.php");
 headpage("photos")
 ?>
 <style>
-div.diapo {cursor:pointer}
-img {border:1px solid}
+table.diapo  {
+  width:600;
+}
+.diapo td {
+  width:200;
+}
+.diapo div{cursor:pointer}
+.diapo img {border:1px solid}
 </style>
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 
@@ -20,26 +26,27 @@ img {border:1px solid}
 <!-- ============ LEFT SIDE SECTION ============== -->
   <?php include("sidebar.php"); ?>
 
-  <!-- ============ MIDDLE COLUMN (CONTENT) ============== -->
+<!-- ============ MIDDLE COLUMN (CONTENT) ============== -->
 <td id="main" align=center>
 <!-- ============ DEBUT SECTION ============== -->
 
 <h1>&nbsp; La Galerie photos &nbsp;</h1>
 
 <p>(cliquer sur une vignette pour lancer le diaporama)</p>
-<p style="height:400px"><embed id="diaporama" /></p>
 
-<table width=600 style="text-align:center">
+<table class="diapo"  style="text-align:center">
 <tr>
-<td width=200><div class="diapo" title="Activités" onclick="album('5986625981442125969')"><img src="images/play1.png" /></td>
-<td width=200><div class="diapo" title="Anniversaire" onclick="album('5986628108757427937')"><img src="images/play2.png" /></td>
-<td width=200><div class="diapo" title="Après-midi récréatif" onclick="album('5986630127264579393')"><img src="images/play3.png" /></td>
+<td><div title="Activités" onclick="album('5986625981442125969')"><img src="images/play1.png" /></td>
+<td><div title="Anniversaire" onclick="album('5986628108757427937')"><img src="images/play2.png" /></td>
+<td><div title="Après-midi récréatif" onclick="album('5986630127264579393')"><img src="images/play3.png" /></td>
 </tr><tr>
 <td>Activités</td>
 <td>Anniversaire</td>
 <td>Après-midi récréatif</td>
 </tr>
 </table>
+
+<p><embed id="diaporama" /></p>
 
 <script type="text/javascript">
 <!--
@@ -58,7 +65,7 @@ function album($albumid) {
 
   $('embed#diaporama').remove();
   parent.append(newElement);
-  parent.attr("style","display:block");
+
 }
 -->
 </script>

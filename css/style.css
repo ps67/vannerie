@@ -59,6 +59,16 @@ body {
 	width: 560px;
 	min-height: 411px;
 }
+#news {
+  width:195px;
+}
+#contact {
+    border: 1px dotted;
+    bottom: 30px;
+    left: 0;
+    margin-left: 10px;
+    position: absolute;
+}
 #sidebar {
 	padding: 10px 20px; 
 	background: #3D0203 url(../images/mainContent_background.gif) repeat-x; 
@@ -84,6 +94,10 @@ body {
 	font-size: 80%; 
 	padding: 10px 0px; 
 	clear: both;
+}
+
+td.leftbar {
+
 }
 
 /* Typography */

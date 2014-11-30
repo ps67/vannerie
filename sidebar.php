@@ -3,13 +3,14 @@
 <td id="leftbar">
 <!-- ============ debut section ============== -->
 
-<div style="width:195px">
-<h2 style="font-size:14pt;background: #369;color: #fff;display:inline">&nbsp; Agenda &nbsp;</h2>
+<div id="news">
+<h2>&nbsp; Agenda &nbsp;</h2>
 <p><u>Dim 28 Septembre:</u><br>RASSEMBLEMENT MOTARDS<br>Restauration-Concerts-Stands multiples</p>
-<a href="contact.php" style="padding-top:5px" ><img src="images/info.jpg" /></a>
-</div>
 
-<div id="menu">
+</div>
+<a href="contact.php" ><img src="images/info.jpg"/>
+
+<div id="contact">
 <img src="images/contact.jpg" />
 </div>
 

@@ -11,13 +11,39 @@ tr#navbar {
 background:#a9ae9f;background-image:url(images/barre.jpg);background-repeat:repeat-x;
 }
 
-td {vertical-align: top;
+td {
+  vertical-align: top;
 }
 
 td#leftbar {
-background:#999f8e;
-vertical-align: top;
-width:10%;
+  background:#999f8e;
+  vertical-align: top;
+  width:15%;
+  position:relative;
+}
+td#leftbar h2 {
+  font-size:14pt;
+  background: #369;
+  color: #fff;
+  display:inline;
+}
+td#leftbar p {
+  background-color:transparent;
+  font-size:11pt;
+  font-weight: bold;
+  color:#000;
+}
+#news {
+  font-size:14pt;
+  color: #fff;
+  display:inline;
+}
+#contact {
+    border: 1px dotted;
+    bottom: 30px;
+    left: 0;
+    margin-left: 10px;
+    position: absolute;
 }
 td#main {
 background:#d2d8c7;
@@ -26,7 +52,7 @@ vertical-align: top;
 h1 {
 background: #369;
 color: #fff;
-display:inline
+display:inline;
 }
 td#rightbar {
 background:#999f8e;
@@ -80,15 +106,6 @@ background-color: #ccc;
 color: #333;
 }
 
-/* --------- style pour menu sidebar flottant et collant --------- */
-#menu {
-  position: fixed;
-  left: 0;
-  bottom: 30px;
-  width: ;
-  margin-left: 10px;
-  border:1px dotted;
-}
 /* --------- style pour formulaire mail --------- */
 	input.textbox {
 	background:#fff;

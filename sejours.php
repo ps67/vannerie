@@ -16,12 +16,12 @@ headpage("sejours")
   <?php include("sidebar.php"); ?>
 
   <!-- ============ MIDDLE COLUMN (CONTENT) ============== -->
-<td id="main">
+<td id="main" style="padding-left:2px;padding-right:2px">
 <!-- ============ DEBUT SECTION ============== -->
 <p >
 <center><h1>&nbsp; SÉJOURS JEUNES &nbsp;</h1></center>
 </p>
-<p align=center><img src="docs/info-sejours.1024.jpg" ></p>
+<p align=center><img src="docs/info-sejours.1024.jpg" style="width:95%;"></p>
 <br>
 </p>
 
