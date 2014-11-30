@@ -21,22 +21,16 @@ td#leftbar {
   width:15%;
   position:relative;
 }
-td#leftbar h2 {
+#news h2 {
   font-size:14pt;
   background: #369;
   color: #fff;
   display:inline;
 }
-td#leftbar p {
-  background-color:transparent;
+#news p {
   font-size:11pt;
   font-weight: bold;
   color:#000;
-}
-#news {
-  font-size:14pt;
-  color: #fff;
-  display:inline;
 }
 #contact {
     border: 1px dotted;
