@@ -21,11 +21,14 @@ td#leftbar {
   width:15%;
   position:relative;
 }
-#news h2 {
+#news a h2 {
   font-size:14pt;
   background: #369;
   color: #fff;
   display:inline;
+}
+#news a,#news a:link,#news a:visited,#news a:active,#news a:hover {
+  text-decoration:none;
 }
 #news p {
   font-size:11pt;
