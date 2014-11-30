@@ -1,0 +1,123 @@
+img { border:0; }
+body {
+margin: 0px; padding: 0px;
+font-family: 'Comic sans ms','Trebuchet MS',verdana;
+}
+tr#header {
+height:100px;background-image:url(images/sapinou.jpg);background-repeat:repeat-x;
+bgcolor="#777d6a";
+}
+tr#navbar {
+background:#a9ae9f;background-image:url(images/barre.jpg);background-repeat:repeat-x;
+}
+
+td {vertical-align: top;
+}
+
+td#leftbar {
+background:#999f8e;
+vertical-align: top;
+width:10%;
+}
+td#main {
+background:#d2d8c7;
+vertical-align: top;
+}
+h1 {
+background: #369;
+color: #fff;
+display:inline
+}
+td#rightbar {
+background:#999f8e;
+/*background:#22273e;*/
+vertical-align: top;
+width:10%;
+}
+tr#footer {
+/*background:#777d6a;*/
+background:rgb(32,32,32);
+font-family: arial, verdana,timesroman;
+color:#fff;
+}
+p {
+padding-bottom:5px;
+}
+ul.blu {
+font-size:16pt;color:blue;font-weight:bold;
+}
+/* --------- style pour barre navigation --------- */
+
+#navbar ul{
+margin:0;
+padding:5px;
+list-style-type:none;
+text-align:center;
+background-color:transparent;
+color:#fff;
+}
+#navbar ul li {
+display:inline;
+}
+#navbar ul li a{
+text-decoration:none;
+padding: .2em 1em;
+color:#ebeee5;
+background-color:transparent;
+}
+#navbar ul li a:hover {
+color: #333;
+background-color:#fff;
+}
+#navbar ul li a.active,
+#navbar ul li a.active:hover {
+/*
+background-color: #91BD09;
+color: #333;
+font-weight:bold;
+*/
+background-color: #ccc;
+color: #333;
+}
+
+/* --------- style pour menu sidebar flottant et collant --------- */
+#menu {
+  position: fixed;
+  left: 0;
+  bottom: 30px;
+  width: ;
+  margin-left: 10px;
+  border:1px dotted;
+}
+/* --------- style pour formulaire mail --------- */
+	input.textbox {
+	background:#fff;
+    border: 1px dotted #000000; 
+    outline:0; 
+    height:30px; 
+    width: 300px; 
+	font-size:12pt;
+	}
+	textarea {
+	background:#fff;
+    border: 1px dotted #000000; 
+    outline:0; 
+    height:200px; 
+    width: 300px; 
+	font-size:12pt;
+	}
+	div.error { 
+		display:none; /*ou block;*/
+		font-style:italic; 
+		font-family:arial;
+		font-size:14px;
+		width:200px;height:40px;
+		border:1px solid red;
+		background-color:white;color:red;
+		position:absolute;left:570px;
+		margin-top:10px;
+		padding-top:2px;
+		text-align:center;
+		vertical-align:middle;
+	}
+	div.form {font-family:trebuchet;font-size:12pt}

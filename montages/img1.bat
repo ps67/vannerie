@@ -1,0 +1,1 @@
+ montage -label %t -frame 5 -background #336699 +polaroid -geometry +4+4 *_0.jpg frame.jpg

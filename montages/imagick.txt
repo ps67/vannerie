@@ -1,0 +1,43 @@
+Site: http://99max.net/Linux/wiki/ImageMagick-convert
+http://www.imagemagick.org la référence
+http://www.commentcamarche.net/faq/6120-imagemagick-manipuler-les-images-en-ligne-de-commande
+http://www.imagemagick.org/script/index.php
+http://www.unixgarden.com/index.php/linux-pratique-hs/imagemagick-quelques-usages-courants
+http://www.southampton.ac.uk/~fangohr/computing/imagemagick.html
+
+
+convert -resize 150x150 image.jpg mini.jpg  #Force la largeur et la hauteur a 150px sans preserver l'aspect
+convert -resize 150x image.jpg mini.png     #Force la largeur à 150px et calcul la hauteur pour préserver l'aspect
+convert -resize x150 image.jpg mini.png     #Pareil mais en fixant la hauteur et en calculant la largeur
+convert -resize 50% image.jpg mini.png      #Réduire la taille de l'image de moitié
+...
+
+ImageMagick permet également d'extraire simplement une portion d'image
+
+# Extraire une portion de 200px x 100px depuis le coin supérieur gauche
+convert -crop 200x100+0+0 image.jpg crop.png
+
+# Polaroid avec un redimensionnement de l’image :
+convert -caption "Un message" image.jpg -thumbnail 450x450 -gravity center -background black -bordercolor white -polaroid 10 final_image.png
+
+NB : On rajoute un petit message avec -caption
+-thumbnail 450×450 : Pour redimensionner l’image (attention on prend une image de grande taille pour la réduire et pas l’inverse ;) )
+
+- Conversion de notre photo sans redimensionnement de l’image :
+	
+convert  -font Candice -pointsize 12 -caption "Un message" image.jpg -gravity center -background black +polaroid final_image.png
+
+NB : -pointsize 12 défini la taille de la police
+
+- Une petite dernière pour la route, avec une petite inclinaison :
+	
+convert -caption "Un message" image.jpg -thumbnail 450x450 -gravity center -background black -bordercolor white -polaroid 10 final_image.png
+
+NB : -polaroid 10 indique l’inclinaison
+
+Enfin, si vous faîtes attention à la taille de l’image, vous remarquerez que l’image a pris du poids. Un petit coup de compression avec :
+	
+mogrify -quality 60 final_image.png
+
+Ajouter une legende:
+convert patrick.jpg -gravity North -background #d1d8c8 -splice 0x50 -annotate +0+20 "Patrick le directeur" -append patrick+.jpg
