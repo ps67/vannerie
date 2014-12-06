@@ -36,13 +36,14 @@ table.diapo  {
 
 <table class="diapo"  style="text-align:center">
 <tr>
-<td><div title="Activités" onclick="album('5986625981442125969')"><img src="images/play1.png" /></td>
-<td><div title="Anniversaire" onclick="album('5986628108757427937')"><img src="images/play2.png" /></td>
-<td><div title="Après-midi récréatif" onclick="album('5986630127264579393')"><img src="images/play3.png" /></td>
-</tr><tr>
+<td><div class="diapo" title="Activités" onclick="album('5986625981442125969')"><img src="images/play1.jpg" /></td>
+<td><div class="diapo" title="Anniversaire" onclick="album('5986628108757427937')"><img src="images/play2.jpg" /></td>
+<td><div class="diapo" title="Après-midi récréatif" onclick="album('5986630127264579393')"><img src="images/play3.jpg" /></td>
+<td><div class="diapo" title="Meli-melo" onclick="album('6089785792804652673')"><img src="images/play4.jpg" /></td></tr><tr>
 <td>Activités</td>
 <td>Anniversaire</td>
 <td>Après-midi récréatif</td>
+<td>Meli-melo</td>
 </tr>
 </table>
 
