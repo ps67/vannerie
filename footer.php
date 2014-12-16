@@ -19,5 +19,6 @@ Centre de loisirs La Vannerie - 54450 Sexey aux Forges
 <!-- ============ FIN SECTION ============== -->
 
 </table>
+<?php include_once("analyticstracking.php") ?>
 </body>
 </html>
