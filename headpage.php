@@ -67,7 +67,7 @@ if ( in_array($page,$activites) )
 if (array_key_exists($page,$titles))
   $title = $titles[$page];
 $style = ($browser == "msie6") ? "style-IE6.css" : "style.css";
-$relocation = ($page == "mailok") ? "<meta http-equiv=\"refresh\" content=\"2;url=contact.php\" />" : "";
+$relocation = ($page == "mailok") ? "<meta http-equiv=\"refresh\" content=\"5;url=contact.php\" />" : "";
 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">

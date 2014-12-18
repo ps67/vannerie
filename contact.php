@@ -19,54 +19,58 @@ headpage("contact")
 <!-- ============ DEBUT SECTION ============== -->
 
 <p/><h1>&nbsp; Contact - Accès &nbsp;</h1>
-<p/><br>
+<p/>
 
 <div class="main" >
-<table cols=3 width=100%>
+<table cols=2 width=100%>
 <tr>
-<td width=35% class="form" >
+<td width=40% class="form" >
 
-<div style="margin-left:0.5cm;">
+	<p style="text-align:center;font-size:14pt"><u>Demande d'information</u></p>
+<div style="text-align:left;margin:0 33px;">
 <form action="mailok.php" method="post" enctype="multipart/form-data" name="form1" id="form1" onsubmit="return validate();" >
 	<input type="hidden" name="page_instance_id" value="<?php echo $_SESSION['page_instance_id']; ?>" />
-	<div align=center style="font-size:14pt"><u>Formulaire demande d'information</u></div>
 	<P/>
 <div class="form" >
-<div class="error" id="err_name" >le nom doit avoir au <br>moins 3 caract&egrave;res</div>
-	Nom *<br />
+<div class="error" id="err_name" >le nom doit avoir au <br>moins 3 caractères</div>
+	Nom *<br>
      <input class="textbox" id="name" name="name" type="text" value="" onclick="raz(this)" />
 </div>	 
-<p />
+
 <div class="form" >
-<div class="error" id="err_mail" >l'adresse doit &ecirc;tre du type :<br> monadresse@domain.fr</div>
-     Email *<br /> 
+<div class="error" id="err_mail" >l'adresse doit &ecirc;tre du type<br> monadresse@domain.fr</div>
+     E-mail *<br> 
      <input class="textbox" id="email" name="email" type="text" value="" onclick="raz(this)" />
 </div>
-     <p />  
+  
 <div class="form" >
-     Message (et tél. pour vous rappeler)<br /> 
+     Message (et tél. pour vous rappeler)<br> 
      <textarea name="comments" cols="30" rows="5" ></textarea> 
 <br />(* champs obligatoires )
 </div> 
-     <p />  
-     <input name="submit" id="submit" type="submit" value="Envoi" onClick="" /> 
+  <p style="text-align:center">
+    <input name="submit" id="submit" type="submit" value="Envoyer" />
+  </p>  
 </form>
 </div>
 </td>
-<td valign=top style="text-align:left;border:1px dotted #404040;border-top:0;border-bottom:0;padding-left:0.5cm">
+<td valign=top style="text-align:left;border-left:1px dotted #404040;">
 <p align=center style="font-size:14pt">
 <u>Accès au centre</u>
-<p  />
-Centre de Loisirs<br />
-LA VANNERIE
-<p/>
-SEXEY-aux-FORGES<BR>(sortie Maron)
-<p/>
-<img src="images/contact2.jpg" />
-</td>
-<td align=center><a href="http://goo.gl/S51OTl" target="_blank"><img style="border:1px solid #404040" width="348" height="250" src="images/acces_vannerie.jpg" /></a>
+</p>
+<p align=center style="font-size:12pt">
+<a href="http://goo.gl/S51OTl" target="_blank"><img style="border:1px solid #404040" width="70%" src="images/acces_vannerie.jpg" /></a>
 <br>
 <a href="http://goo.gl/S51OTl" style="color:#404040;text-align:left;" target="_blank"><small>Ouvrir le plan dans Google Maps</small></a>
+<br>
+<br>
+Centre de Loisirs
+LA VANNERIE
+<br>
+SEXEY-aux-FORGES<BR>(sortie Maron)
+<br>
+<br>
+<img src="images/contact2.jpg" />
 </td>
 </tr>
 </table>
